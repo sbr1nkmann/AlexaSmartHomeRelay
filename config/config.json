@@ -1,0 +1,53 @@
+{
+    "server": {
+        "port": 8080,
+        "path": "*"
+    },
+    "client": {
+        "host": "192.168.10.20",
+        "port": 1880
+    },
+    "devices": [
+        {
+            "endpointId": "Staubsauger",
+            "manufacturerName": "Steffen SmartHome",
+            "description": "Staubsauger OG",
+            "friendlyName": "Staubsauger",
+            "displayCategories": [
+                "SWITCH"
+            ],
+            "capabilities": [
+                "Alexa.PowerController"
+            ],
+            "values": [
+                {
+                    "interface": "Alexa.PowerController",
+                    "value": "OFF"
+                }
+            ]
+        },
+        {
+            "endpointId": "FanCinema",
+            "manufacturerName": "Steffen SmartHome",
+            "description": "Lüftung Kino",
+            "friendlyName": "Lüftung Kino",
+            "displayCategories": [
+                "FAN"
+            ],
+            "capabilities": [
+                "Alexa.PowerController",
+                "Alexa.PercentageController"
+            ],
+            "values": [
+                {
+                    "interface": "Alexa.PowerController",
+                    "value": "OFF"
+                },
+                {
+                    "interface": "Alexa.PercentageController",
+                    "value": "0"
+                }                
+            ]
+        }                  
+    ]
+}
